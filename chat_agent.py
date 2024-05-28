@@ -6,7 +6,8 @@ from langchain_community.tools import DuckDuckGoSearchRun
 from langchain_core.runnables import RunnableConfig
 from langchain_openai import ChatOpenAI
 import os
-os.chdir('E:\学习\python\py_codbase\POPs_LLM')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 os.environ['TAVILY_API_KEY']='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'
 import streamlit as st
 
@@ -34,4 +35,3 @@ if prompt := st.chat_input(placeholder="Who won the Women's U.S. Open in 2018?")
     inputs = {'question':prompt,'history':''}
     r = app.invoke(inputs)
     st.write(r['output'])
-        

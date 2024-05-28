@@ -42,7 +42,7 @@ def Intent_analyze(input:dict)->dict:
     logger.info(output)
     logger.info(f'{question} has been transformed into {output.question}')
     
-    return {'retrieval':output.retrieval,'question':output.question}
+    return {'retrieval':output.retrieval,'question':question} # output.question
 """
 r= Intent_analyze({'question':'你是谁','history':""})
 logger.info(r)
@@ -93,7 +93,7 @@ def Router(input:dict)->dict:
     elements = [1, 2, 3, 4, 5, 6]
     _d = random.sample(elements, 2)
     logger.info(f"选择的知识库代号为：{_d}")
-    return {'domain':_d}
+    return {'domain':[1]}
     """
     _chain = get_router_chain()
     question = input.get('question','')
@@ -120,7 +120,7 @@ def Retrievers(input:dict)->dict:
     context = []
     for _ in input.get('domain',''):
         if _ in [1,2,3,4,5,6]:
-            _ragchain = RagChain_with_context(kb_id=_,if_answer = False)
+            _ragchain = RagChain_with_context(kb_id=_,if_answer = False,r2=False,IE=False,rag_fusion=False)
         else:
             logger.warning(f"get wrong domain :'{_}'")
             continue

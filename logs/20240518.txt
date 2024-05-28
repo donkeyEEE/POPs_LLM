@@ -64,3 +64,4 @@
 2024-05-18 14:01:00.245 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:19 - 您是谁 don't need retrieval
 2024-05-18 14:01:00.249 | INFO     | PK_LLM_endfront.Langgraph.Edges:Web_search_manager:27 - ---Doing Web_search_manager---
 2024-05-18 14:01:02.091 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Generater_dirctly:242 - ---Doing Generater_dirctly---
+2024-05-18 23:58:45.546 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:37 - ---Doing Intent_analyze---
