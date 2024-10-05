@@ -77,7 +77,6 @@ Document Content:
 {step_back_context}
 ***
 **Notes**
-- Ensure every step is evidence-based, avoiding unfounded assumptions.
 - Use professional chemical terminology and ensure the answer is clear and understandable.
 - If needed, refer to other relevant resources or consult with experts.
 """

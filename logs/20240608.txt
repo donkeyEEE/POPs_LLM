@@ -1,0 +1,53 @@
+2024-06-08 14:19:31.228 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:37 - ---Doing Intent_analyze---
+2024-06-08 14:19:33.763 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:42 - retrieval=False question='请介绍一下自己'
+2024-06-08 14:19:33.764 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:43 - 请介绍一下自己 has been transformed into 请介绍一下自己
+2024-06-08 14:19:33.767 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:13 - ---Doing Retrieval_manager---
+2024-06-08 14:19:33.767 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:14 - {'retrieval': False, 'question': '请介绍一下自己', 'history': ''}
+2024-06-08 14:19:33.768 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:19 - 请介绍一下自己 don't need retrieval
+2024-06-08 14:19:33.772 | INFO     | PK_LLM_endfront.Langgraph.Edges:Web_search_manager:27 - ---Doing Web_search_manager---
+2024-06-08 14:19:35.487 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Web_searcher:175 - ---WEB SEARCH---
+2024-06-08 14:19:38.066 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Generater:197 - ---Doing Generater---
+2024-06-08 14:20:44.730 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:37 - ---Doing Intent_analyze---
+2024-06-08 14:20:46.776 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:42 - retrieval=False question='请介绍一下你自己'
+2024-06-08 14:20:46.777 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:43 - 请介绍一下你自己 has been transformed into 请介绍一下你自己
+2024-06-08 14:20:46.779 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:13 - ---Doing Retrieval_manager---
+2024-06-08 14:20:46.779 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:14 - {'retrieval': False, 'question': '请介绍一下你自己', 'history': ''}
+2024-06-08 14:20:46.780 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:19 - 请介绍一下你自己 don't need retrieval
+2024-06-08 14:20:46.782 | INFO     | PK_LLM_endfront.Langgraph.Edges:Web_search_manager:27 - ---Doing Web_search_manager---
+2024-06-08 14:20:48.476 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Generater_dirctly:242 - ---Doing Generater_dirctly---
+2024-06-08 14:21:33.967 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:37 - ---Doing Intent_analyze---
+2024-06-08 14:21:36.286 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:42 - retrieval=True question='What is PFAS and how is the half-life of PFAS measured in the human body?'
+2024-06-08 14:21:36.287 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:43 - 什么是PFAS，如何测量PFAS在人体内的半衰期 has been transformed into What is PFAS and how is the half-life of PFAS measured in the human body?
+2024-06-08 14:21:36.289 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:13 - ---Doing Retrieval_manager---
+2024-06-08 14:21:36.290 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:14 - {'retrieval': True, 'question': '什么是PFAS，如何测量PFAS在人体内的半衰期', 'history': ''}
+2024-06-08 14:21:36.290 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:16 - 什么是PFAS，如何测量PFAS在人体内的半衰期 need retrieval
+2024-06-08 14:21:36.293 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Router:92 - ---Doing Router---
+2024-06-08 14:21:36.294 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Router:95 - 选择的知识库代号为：[3, 1]
+2024-06-08 14:21:36.296 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Retrievers:119 - ---Doing Retrievers---
+2024-06-08 14:21:48.743 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Retrievers:128 - domain 1 get 5 context
+2024-06-08 14:21:48.746 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Reranker:146 - ---Doing Reranker---
+2024-06-08 14:21:48.748 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Generater:197 - ---Doing Generater---
+2024-06-08 14:22:55.955 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:37 - ---Doing Intent_analyze---
+2024-06-08 14:22:57.761 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:42 - retrieval=True question='What are PFAS?'
+2024-06-08 14:22:57.762 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:43 - 什么PFAS has been transformed into What are PFAS?
+2024-06-08 14:22:57.764 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:13 - ---Doing Retrieval_manager---
+2024-06-08 14:22:57.764 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:14 - {'retrieval': True, 'question': '什么PFAS', 'history': ''}
+2024-06-08 14:22:57.764 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:16 - 什么PFAS need retrieval
+2024-06-08 14:22:57.766 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Router:92 - ---Doing Router---
+2024-06-08 14:22:57.767 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Router:95 - 选择的知识库代号为：[4, 6]
+2024-06-08 14:22:57.771 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Retrievers:119 - ---Doing Retrievers---
+2024-06-08 14:23:05.090 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Retrievers:128 - domain 1 get 5 context
+2024-06-08 14:23:05.094 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Reranker:146 - ---Doing Reranker---
+2024-06-08 14:23:05.096 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Generater:197 - ---Doing Generater---
+2024-06-08 14:28:33.928 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:37 - ---Doing Intent_analyze---
+2024-06-08 14:28:35.987 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:42 - retrieval=True question='What are PFAS and how to treat PFAS contamination?'
+2024-06-08 14:28:35.987 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Intent_analyze:43 - 什么是PFAS，如何处理PFAS污染 has been transformed into What are PFAS and how to treat PFAS contamination?
+2024-06-08 14:28:35.989 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:13 - ---Doing Retrieval_manager---
+2024-06-08 14:28:35.989 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:14 - {'retrieval': True, 'question': '什么是PFAS，如何处理PFAS污染', 'history': ''}
+2024-06-08 14:28:35.989 | INFO     | PK_LLM_endfront.Langgraph.Edges:Retrieval_manager:16 - 什么是PFAS，如何处理PFAS污染 need retrieval
+2024-06-08 14:28:35.991 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Router:92 - ---Doing Router---
+2024-06-08 14:28:35.992 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Router:95 - 选择的知识库代号为：[6, 4]
+2024-06-08 14:28:35.995 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Retrievers:119 - ---Doing Retrievers---
+2024-06-08 14:28:43.479 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Retrievers:128 - domain 1 get 5 context
+2024-06-08 14:28:43.483 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Reranker:146 - ---Doing Reranker---
+2024-06-08 14:28:43.485 | INFO     | PK_LLM_endfront.Langgraph.Nodes:Generater:197 - ---Doing Generater---

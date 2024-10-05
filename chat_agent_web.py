@@ -10,7 +10,7 @@ os.environ['TAVILY_API_KEY']='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'
 import streamlit as st
 
 st.set_page_config(page_title="EnvironmentGPT", page_icon="💬")
-st.header("📖 EnvironmentGPT: Chat with environmental Knowlegde")
+st.header("📖 EnvironmentGPT: Chat with Environmental Knowlegde")
 
 # 设置边框
 # openai_api_key = st.sidebar.text_input("OpenAI API Key", type="password")
@@ -19,7 +19,7 @@ with st.sidebar:
         "## How to use \n"
         "   "
         "1. Enter your [OpenAI API key](https://platform.openai.com/account/api-keys) below🔑\n"
-        "2. Configure the services you need in the settings."
+        "2. Configure the services you need in the settings.\n"
         "3. Ask a question about the document💬\n"
     )
     api_key_input = st.text_input(
@@ -59,7 +59,7 @@ from langchain_openai import ChatOpenAI
 def default_agent(prompt:str)->str:
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key=st.session_state["OPENAI_API_KEY"], streaming=True)
     tools = []
-    chat_agent = ConversationalChatAgent.from_llm_and_tools(llm=llm, tools=tools)
+    chat_agent = ConversationalChatAgent.from_llm_and_tools(llm=llm, tools=tools,system_message='你是一个拥有环境领域知识的问答机器人，你可以使用检索增强知识库解决环境领域问题。')
     executor = AgentExecutor.from_agent_and_tools(
         agent=chat_agent,
         tools=tools,
