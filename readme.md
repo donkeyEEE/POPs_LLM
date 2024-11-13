@@ -1,12 +1,12 @@
 
-![](_P\2.png)
+![img](https://github.com/donkeyEEE/POPs_LLM/blob/main/_P/2.png)
 
-# 一个用于垂直领域的问答Agent
+# A Vertical Domain Question-Answering Agent
 
-一个由六个知识库组成的综合问答系统，基于LangChain和LangGraph。
+A comprehensive question-answering system composed of six knowledge bases, based on LangChain and LangGraph.
 
-本仓库用于基于pdf格式的文本，特别是各种文献，进行智能问答。通过双层检索和信息抽取机制，努力给出最好的基于专属数据的回答。
+This repository is designed for intelligent question-answering based on text in PDF format, especially various literature. Through a dual-layer retrieval and information extraction mechanism, it strives to provide the best answers based on exclusive data.
 
-# 配置信息
+# Configuration Information
 
-见requirement.txt
+See requirement.txt
